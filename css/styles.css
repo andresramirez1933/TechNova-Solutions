@@ -1,0 +1,101 @@
+/* Variables base */
+:root {
+  --brand: #fa812e;
+  --ink: #0f172a;
+  --muted: #6b7280;
+}
+
+/* Tipografía */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial,
+    sans-serif;
+  color: var(--ink);
+}
+
+/* Nav */
+.navbar .nav-link {
+  font-weight: 600;
+}
+.navbar .nav-link.active {
+  color: var(--brand);
+}
+
+/* Hero */
+header .lead {
+  color: var(--muted);
+}
+
+/* Cards: efecto sutil */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* CTA gradient */
+.cta-gradient {
+  background: linear-gradient(90deg, #ff7a2f 0%, #ff9f61 100%);
+  color: #fff;
+}
+
+/* Footer */
+.hover-light:hover {
+  color: #fff !important;
+}
+
+.login-btn {
+  background-color: #f27c2c;
+  border: none;
+  /* border: 1px solid red; */
+}
+
+.login-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.login-container {
+  /* justify-content: space-around; */
+  margin: 150px auto 0 auto;
+  max-width: 300px;
+  /* margin-top: 150px; */
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 40px 35px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between inputs and button */
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.login-btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#alertBox {
+  margin-top: 15px;
+}
+
+#carouselServicios .card {
+  max-width: 240px; 
+  margin: 0 auto;
+}
+
+#carouselServicios .card-img-top {
+  height: 160px;       
+  object-fit: contain; 
+  padding: 8px;
+}

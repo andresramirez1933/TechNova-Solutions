@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | TechNova Solutions</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" 
+    rel="stylesheet"
+  >
+</head>
+<body>
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="index.html"></a>
+          <img src="img/Logo.png" alt="TechNova Solutions" height="100">
+
+  <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Iniciar Sesión</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="fw-bold">Contáctanos</h1>
+      <p class="text-muted">Estamos aquí para ayudarte. Déjanos tu mensaje y te responderemos lo antes posible.</p>
+    </div>
+  </header>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Formulario -->
+        <div class="col-12 col-lg-7">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Enviar mensaje</button>
+          </form>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="col-12 col-lg-5">
+          <h5 class="fw-bold mb-3">Información de contacto</h5>
+          <p><i class="bi bi-geo-alt-fill text-warning"></i> 1234 Calle Principal, Ciudad</p>
+          <p><i class="bi bi-telephone-fill text-warning"></i> +1 (234) 567-8900</p>
+          <p><i class="bi bi-envelope-fill text-warning"></i> contacto@technova.com</p>
+
+          <h6 class="fw-bold mt-4">Síguenos</h6>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    © <span id="year"></span> TechNova Solutions. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
